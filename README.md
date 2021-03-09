@@ -13,9 +13,9 @@ Alghorithm is:
   
   2)His action must be confirmed by all players
   
-  3)After that player (or not) can approve his action(roll). After approve he becomes a player if he was not.
+  3)After that player (or not) can approve his action(roll). After approvement he becomes a player if he was not.
   
-  4)If player wants to reroll his score, he needs to get confirm from all players too
+  4)If player wants to reroll his score, he needs to get confirmations from all players too
 
 ### Example
 
