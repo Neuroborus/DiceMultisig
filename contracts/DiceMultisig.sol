@@ -43,7 +43,6 @@ contract DiceMultisig {
 
    function roll() public {
         action++;
-        RollLog memory log;
         RollType rollType;
 
         if(score[msg.sender]==0){
@@ -51,8 +50,7 @@ contract DiceMultisig {
         }else{
             rollType = RollType.ROLL_AGAIN;
         }
-        log = RollLog(rollType, msg.sender,0);
-        RollLogs[action] = log;
+        RollLogs[action] = RollLog(rollType, msg.sender,0);
 
         emit NewRollRequest(action);
    }
