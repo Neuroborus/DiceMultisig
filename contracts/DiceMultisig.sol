@@ -17,7 +17,7 @@ contract DiceMultisig {
    event RollConfirmedByAddress(uint indexed _actionId, address indexed _address);
    event RollUnconfirmedByAddress(uint indexed _actionId, address indexed _address);
    event EnoughConfirmsToCreatorsApprove(uint indexed _actionId);
-   event RollApprovedByCreator(uint indexed _actionId, uint indexed _newScore);
+   event RollApprovedByCreator(uint indexed _actionId);
 
    modifier onlyPlayer(){
        require(score[msg.sender]!=0, "not a player");
@@ -30,7 +30,7 @@ contract DiceMultisig {
    mapping(uint=>RollLog) RollLogs;   //action=>log
    mapping(uint => mapping(address => bool)) public isConfirmed;
 
-   constructor() public{
+   constructor(){
        score[msg.sender] = 12;
        playersCount++;
    }
@@ -88,7 +88,7 @@ contract DiceMultisig {
             playersCount++;
         }
 
-        emit RollApprovedByCreator(_actionId, score[msg.sender]);
+        emit RollApprovedByCreator(_actionId);
    }
 
    
