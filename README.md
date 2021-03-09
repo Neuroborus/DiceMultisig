@@ -47,8 +47,8 @@ State for third address after approvement:
 
 ![](screenshots/8.png)
 
-
-
+### Kovan network address
+0x2Ce3567764e220F5d24Caa3fBc05afFfa8D10f2c
 
 
 
