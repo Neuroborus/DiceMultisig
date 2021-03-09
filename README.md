@@ -2,7 +2,7 @@
 
 ### Functionality
 
-Allows all players to controls all rolls of 12-sided dice.
+Allows all players to control all rolls of 12-sided dice.
 
 ![](screenshots/1.png)
 
