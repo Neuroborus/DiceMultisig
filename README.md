@@ -1,21 +1,21 @@
 # Dice multicig example
 
-###Functionality
+### Functionality
 
-	Allows all players to controls all rolls of 12-sided dice.
+Allows all players to controls all rolls of 12-sided dice.
 
 ![](screenshots/1.png)
 
 
-	Alghorithm is:
+Alghorithm is:
 1)Player (or not) send roll() to roll dice
 2)His action must be confirmed by all players
 3)After that player (or not) can approve his action(roll). After approve he becomes a player if he was not.
 4)If player wants to reroll his score, he needs to get confirm from all players too
 
-###Example
+### Example
 
-	Contract was deployed by first address, second now is player too (because his roll was confirmed by first address).
+Contract was deployed by first address, second now is player too (because his roll was confirmed by first address).
 
 Now we work with third address. Sending roll() from third address:
 
