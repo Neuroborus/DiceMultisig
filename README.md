@@ -8,10 +8,14 @@ Allows all players to controls all rolls of 12-sided dice.
 
 
 Alghorithm is:
-1)Player (or not) send roll() to roll dice
-2)His action must be confirmed by all players
-3)After that player (or not) can approve his action(roll). After approve he becomes a player if he was not.
-4)If player wants to reroll his score, he needs to get confirm from all players too
+  
+  1)Player (or not) send roll() to roll dice
+  
+  2)His action must be confirmed by all players
+  
+  3)After that player (or not) can approve his action(roll). After approve he becomes a player if he was not.
+  
+  4)If player wants to reroll his score, he needs to get confirm from all players too
 
 ### Example
 
